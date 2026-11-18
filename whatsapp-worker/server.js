@@ -23,14 +23,13 @@ import express from "express";
 import pino from "pino";
 import QRCode from "qrcode";
 import baileys from "@whiskeysockets/baileys";
-
-const {
-  default: makeWASocket,
+import makeWASocket, {
   useMultiFileAuthState,
   fetchLatestBaileysVersion,
   DisconnectReason,
   Browsers,
-} = baileys;
+} from "@whiskeysockets/baileys";
+
 
 const PORT = Number(process.env.PORT || 8088);
 const WORKER_TOKEN = process.env.WORKER_TOKEN || "";
