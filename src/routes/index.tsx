@@ -13,8 +13,6 @@ import {
   CircleCheck,
 } from "lucide-react";
 
-import heroAsset from "@/assets/zetiora-hero-mockup.png.asset.json";
-import logoAsset from "@/assets/zetiora-logo.png.asset.json";
 import { PlanCards } from "@/components/PlanCards";
 import { useAuth } from "@/hooks/useAuth";
 
@@ -59,7 +57,8 @@ function Landing() {
     <div className="min-h-screen bg-background">
       <header className="sticky top-0 z-20 border-b border-border bg-background/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-          <img src={logoAsset.url} alt="Zetiora AI" className="h-9 w-auto" />
+          <img src="/zetiora-logo.png" alt="Zetiora AI" className="h-9 w-auto" />
+
           <nav className="hidden gap-7 text-sm font-medium text-foreground md:flex">
             <a href="#features">Features</a>
             <a href="#how">How It Works</a>
@@ -99,7 +98,8 @@ function Landing() {
               <ShieldCheck className="h-5 w-5 text-gold" aria-hidden /> Built for ambitious businesses.
             </p>
           </div>
-          <img src={heroAsset.url} alt="Zetiora AI ikijibu mteja kwenye WhatsApp" className="mx-auto w-full max-w-md" />
+        <img src="/zetiora-hero-mockup.png" alt="Zetiora AI ikijibu mteja kwenye WhatsApp" className="mx-auto w-full max-w-md" />
+
         </section>
 
         <section id="features" className="mx-auto max-w-6xl px-4 py-12">
@@ -155,7 +155,8 @@ function Landing() {
       <footer id="contact" className="border-t border-border">
         <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-6 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-3">
-            <img src={logoAsset.url} alt="Zetiora AI" className="h-7 w-auto" />
+            <img src="/zetiora-logo.png" alt="Zetiora AI" className="h-7 w-auto" />
+
             <span>Powered by Zetiora AI Technologies</span>
           </div>
           <a href="https://www.zetiora.co.tz" className="text-foreground">www.zetiora.co.tz</a>
